@@ -58,12 +58,12 @@ export default class Frontpage extends Component {
             <div id="info" className="card carlo-card">
               <div className="card-body">
                 <h1 className="card-title">Hoe geven wij bijles?</h1>
-                <p className="card-text" style={{fontSize: 1.2+'rem'}}>Als voormalige eerste en tweede klassers weten wij precies waar de valkuilen liggen en hoe deze te vermijden. Wij willen uw kind graag helpen met het beter begrijpen van de schoolstof. Vaak helpt het om opdrachten te maken en fouten goed te analyseren en te begrijpen, zodat deze niet herhaald worden.</p>
                 <ol>
-                  <li><h5>Fouten analyseren</h5></li>
                   <li><h5>Opdrachten maken</h5></li>
+                  <li><h5>Fouten analyseren</h5></li>
                   <li><h5>Overleg met de docent</h5></li>
                 </ol>
+                <p className="card-text" style={{fontSize: 1.2+'rem'}}>Als voormalige eerste en tweede klassers weten wij precies waar de valkuilen liggen en hoe deze te vermijden. Wij willen uw kind graag helpen met het beter begrijpen van de schoolstof. Vaak helpt het om opdrachten te maken en fouten goed te analyseren en te begrijpen, zodat deze niet herhaald worden.</p>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default class Frontpage extends Component {
                 <div class="card-header" id="headingFive">
                   <h5 class="mb-0">
                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                      Welke vakken?
+                      Bijles vakken
                     </button>
                   </h5>
                 </div>
@@ -92,6 +92,20 @@ export default class Frontpage extends Component {
                 </div>
               </div>
               <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Hoe lang duurt de gemiddelde bijles?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    Uit ervaring weten wij dat een bijles effectief is als deze minimaal een <b>uur tot anderhalf uur</b> duurt.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -106,44 +120,30 @@ export default class Frontpage extends Component {
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Hoe neem ik contact op?
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                  <div class="card-body">
-                    Als u contact met ons wilt opnemen, kunt u ons <b>bellen of mailen</b>. Onze contactgegevens zijn hieronder te vinden.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Hoelang duurt de gemiddelde sessie?
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                  <div class="card-body">
-                    Uit ervaring weten wij dat een sessie heet meest effectief is als deze rond <b>een uur of anderhalf</b> duurt.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
                 <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Kennismaking?
+                      Eerste half uur gratis!
                     </button>
                   </h5>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                   <div class="card-body">
                     <b>Ter kennismaking</b> is het eerste half uur van de eerste afspraak <b>op onze kosten</b>, hierin worden wat punten doorgenomen en bepalen wij samen de aanpak.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Contact opnemen?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    Als u contact met ons wilt opnemen, kunt u ons <b>bellen of mailen</b>. De contactgegevens per tutor vindt u hieronder.
                   </div>
                 </div>
               </div>
