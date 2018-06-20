@@ -12,6 +12,9 @@ export default class Tutors extends Component {
     this.state = {
       tutors: [
         {"name": "Carlo Jacobs", "klas": "4 vwo, IB", "email": "carlojacobs@reviaandoorn.nl", "description": "Wiskunde, Natuurkunde, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"},
+        {"name": "Noortje Brunner", "klas": "4 vwo, IB", "email": "noortjebrunner@reviaandoorn.nl", "description": "Geschiedenis, Economie, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"},
+        {"name": "Noortje Brunner", "klas": "4 vwo, IB", "email": "noortjebrunner@reviaandoorn.nl", "description": "Geschiedenis, Economie, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"},
+        {"name": "Noortje Brunner", "klas": "4 vwo, IB", "email": "noortjebrunner@reviaandoorn.nl", "description": "Geschiedenis, Economie, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"},
         {"name": "Noortje Brunner", "klas": "4 vwo, IB", "email": "noortjebrunner@reviaandoorn.nl", "description": "Geschiedenis, Economie, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"}
       ]
     }
@@ -23,7 +26,7 @@ export default class Tutors extends Component {
     for (let i = 0; i < this.state.tutors.length; i++) {
       var tutor = this.state.tutors[i];
       var newElement = (
-        <div className="card studentcard carlo-card" style={{width: 22 + 'rem'}} key={i}>
+        <div className="card studentcard tutor-card" key={i}>
           <img className="card-img-top" src={tutor["imageLink"]} alt="Card image cap"/>
           <div className="card-body">
             <h5 className="card-title">{tutor["name"]}, {tutor["klas"]}</h5>
@@ -47,8 +50,12 @@ export default class Tutors extends Component {
     return(
       <div className="container mt-5">
         <h1 id="tutors">Tutoren</h1>
-        <div className="row">
-          {elements}
+        <p style={{fontSize: '1.3rem'}}>Als u een van ons wilt inhuren, of als u nog vragen heeft, neem dan gerust contact met ons op. Dit kan via email of telefoon.</p>
+        <br/>
+        <div className="container">
+          <div className="row">
+            {elements}
+          </div>
         </div>
       </div>
     );

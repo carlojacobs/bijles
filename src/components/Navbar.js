@@ -6,9 +6,12 @@ import React, { Component } from 'react';
 
 export default class Navbar extends Component {
   render() {
+    const path = this.props.location.pathname;
+    const homeNavItemClass = path == "/home" ? "nav-item active" : "nav-item"
+    const tutorsNavItemClass = path == "/tutoren" ? "nav-item active" : "nav-item"
     return(
-      <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded mt-4">
+      <div>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <a className="navbar-brand" href="#">Bijles Doorn <i class="fas fa-chalkboard-teacher fa-lg"></i></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -16,8 +19,11 @@ export default class Navbar extends Component {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+              <li className={homeNavItemClass}>
+                <a className="nav-link" href="/home">Home</a>
+              </li>
+              <li className={tutorsNavItemClass}>
+                <a className="nav-link" href="/tutoren">Tutoren</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="http://www.revius.nl">Revius site</a>

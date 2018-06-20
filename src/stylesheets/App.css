@@ -3,17 +3,18 @@ body {
   position: relative;
 }
 
-.carlo-card {
+.tutor-card {
   margin-bottom: 1rem;
   margin-right: 1rem;
+  width: 20rem;
 }
 
 #info {
   background: white;
 }
 
-#seperator {
+.seperator {
   height: 2px;
-  background-color: lightgrey;
-  border-radius: 1rem;
+  background-color: #eaebed;
+  border-radius: 10rem;
 }
