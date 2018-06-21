@@ -50,7 +50,7 @@ export default class Tutors extends Component {
     return(
       <div className="container mt-5">
         <h1 id="tutors">Tutoren</h1>
-        <p style={{fontSize: '1.3rem'}}>Als u een van ons wilt inhuren, of als u nog vragen heeft, neem dan gerust contact met ons op. Dit kan via email of telefoon.</p>
+        <p style={{fontSize: '1.3rem'}}>Als u een van ons wilt inhuren, of als u nog vragen heeft, neem dan gerust contact met ons op. Dit kan via email of telefoon. Verdere details zoals beschikbaarheid en betaling kunt u overleggen met de tutor.</p>
         <br/>
         <div className="container">
           <div className="row">

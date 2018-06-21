@@ -34,7 +34,7 @@ export default class Frontpage extends Component {
                 <div className="card-header">Tarief</div>
                 <div className="card-body">
                   <h4 className="card-title">Wij werken voor:</h4>
-                  <h2 className="card-title">€14,99/u</h2>
+                  <h2 className="card-title">€11,99/u</h2>
                 </div>
               </div>
             </div>
