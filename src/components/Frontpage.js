@@ -29,7 +29,7 @@ export default class Frontpage extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 tarief-card">
               <div className={"card text-center text-white bg-" + this.state.style + " mb-3"} style={{maxWidth: 18 + 'rem'}}>
                 <div className="card-header">Tarief</div>
                 <div className="card-body">

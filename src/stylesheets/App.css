@@ -18,3 +18,9 @@ body {
   background-color: #eaebed;
   border-radius: 10rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .tarief-card {
+    margin-top: 1rem;
+  }
+}
