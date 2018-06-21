@@ -9,7 +9,7 @@ export default class Frontpage extends Component {
   constructor() {
     super();
     this.state = {
-      style: "success"
+      style: "primary"
     }
   }
 
