@@ -25,9 +25,9 @@ export default class Navbar extends Component {
               <li className={tutorsNavItemClass}>
                 <a className="nav-link" href="/tutoren">Tutoren</a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="http://www.revius.nl">Revius site</a>
-              </li>
+              </li> */}
               {/* <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Dropdown

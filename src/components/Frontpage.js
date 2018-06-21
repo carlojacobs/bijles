@@ -24,7 +24,7 @@ export default class Frontpage extends Component {
                 <div className="card-body">
                   <h1 className="card-title">Wie zijn wij?</h1>
                   <h5 className="card-subtitle mb-2 text-muted">Goede vraag!</h5>
-                  <p className="card-text" style={{fontSize: 1.2+'rem'}}>Wij zijn een groep leerlingen die in de vierde klas of hoger zitten, en veel ervaring hebben met toetsen, huiswerk en andere schoolzaken. Graag helpen wij uw kind om zijn of haar cijfers te verbeteren.</p>
+                  <p className="card-text" style={{fontSize: 1.2+'rem'}}>Wij zijn een groep leerlingen die in de vierde klas VWO of hoger zitten op het Revius Lyceum Doorn. Wij hebben veel ervaring hebben met toetsen, huiswerk en andere schoolzaken. Graag helpen wij uw kind om zijn of haar cijfers te verbeteren.</p>
                   <a className={"btn btn-lg btn-" + this.state.style} href="/tutoren">Oke! Wie kan ik inhuren?</a>
                 </div>
               </div>
