@@ -27,7 +27,7 @@ export default class Tutors extends Component {
       var tutor = this.state.tutors[i];
       var newElement = (
         <div className="card studentcard tutor-card" key={i}>
-          <img className="card-img-top" src={tutor["imageLink"]} alt="Card image cap"/>
+          <img className="card-img-top" src={tutor["imageLink"]} alt="Tutor"/>
           <div className="card-body">
             <h5 className="card-title">{tutor["name"]}, {tutor["klas"]}</h5>
             <p className="card-text">

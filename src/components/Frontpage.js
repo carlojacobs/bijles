@@ -9,11 +9,13 @@ export default class Frontpage extends Component {
   constructor() {
     super();
     this.state = {
-      style: "primary"
+      style: "warning"
     }
   }
 
   render() {
+    const textStyleColor = this.state.style === "light" || this.state.style === "warning" ? "black " : "white "
+    const textStyleColor2 = this.state.style === "light" || this.state.style === "warning" ? "dark " : "light "
     return(
       <div>
         <Header style={this.state.style}/>
@@ -24,13 +26,13 @@ export default class Frontpage extends Component {
                 <div className="card-body">
                   <h1 className="card-title">Wie zijn wij?</h1>
                   <h5 className="card-subtitle mb-2 text-muted">Goede vraag!</h5>
-                  <p className="card-text" style={{fontSize: 1.2+'rem'}}>Wij zijn een groep leerlingen die in de vierde klas VWO of hoger zitten op het Revius Lyceum Doorn. Wij hebben veel ervaring hebben met toetsen, huiswerk en andere schoolzaken. Graag helpen wij uw kind om zijn of haar cijfers te verbeteren.</p>
+                  <p className="card-text" style={{fontSize: 1.2+'rem'}}>Wij zijn een groep leerlingen die in de vierde klas VWO of hoger zitten op het Revius Lyceum Doorn. Wij hebben veel ervaring met toetsen, huiswerk en andere schoolzaken. Graag helpen wij uw kind om zijn of haar cijfers te verbeteren.</p>
                   <a className={"btn btn-lg btn-" + this.state.style} href="/tutoren">Oke! Wie kan ik inhuren?</a>
                 </div>
               </div>
             </div>
             <div className="col-md-3 tarief-card">
-              <div className={"card text-center text-white bg-" + this.state.style + " mb-3"} style={{maxWidth: 18 + 'rem'}}>
+              <div className={"card text-center text-" + textStyleColor + "bg-" + this.state.style + " mb-3"} style={{maxWidth: 18 + 'rem'}}>
                 <div className="card-header">Tarief</div>
                 <div className="card-body">
                   <h4 className="card-title">Wij werken voor:</h4>
@@ -48,11 +50,11 @@ export default class Frontpage extends Component {
                 <div className="card-body">
                   <h1 className="card-title">Hoe geven wij bijles?</h1>
                   <ol>
-                    <li><h5>Opdrachten maken</h5></li>
-                    <li><h5>Fouten analyseren</h5></li>
-                    <li><h5>Overleg met de docent</h5></li>
+                    <li><h5><kbd className={"bg-" + this.state.style + " text-" + textStyleColor2}>Opdrachten maken</kbd></h5></li>
+                    <li><h5><kbd className={"bg-" + this.state.style + " text-" + textStyleColor2}>Fouten analyseren</kbd></h5></li>
+                    <li><h5><kbd className={"bg-" + this.state.style + " text-" + textStyleColor2}>Overleg met de docent</kbd></h5></li>
                   </ol>
-                  <p className="card-text" style={{fontSize: 1.2+'rem'}}>Als voormalige eerste en tweede klassers weten wij precies waar de valkuilen liggen en hoe deze te vermijden. Wij willen uw kind graag helpen met het beter begrijpen van de schoolstof. Vaak helpt het om opdrachten te maken en fouten goed te analyseren en te begrijpen, zodat deze niet herhaald worden.</p>
+                  <p className="card-text" style={{fontSize: 1.2+'rem'}}>Als voormalige onderbouwleerlingen weten wij precies waar de valkuilen liggen en hoe deze te vermijden. Wij willen uw kind graag helpen met het beter begrijpen van de schoolstof. Vaak helpt het om opdrachten te maken en fouten goed te analyseren en te begrijpen, zodat deze niet herhaald worden.</p>
                 </div>
               </div>
             </div>
@@ -71,7 +73,7 @@ export default class Frontpage extends Component {
                       <b>Bijles vakken:</b>
                       <ul>
                         <li>Wiskunde</li>
-                        <li>Engelse (ook op TTO niveau)</li>
+                        <li>Engels (ook op TTO niveau)</li>
                         <li>Natuurkunde / NASK</li>
                         <li>Scheikunde / NASK</li>
                         <li>Economie</li>
@@ -132,7 +134,7 @@ export default class Frontpage extends Component {
                   </div>
                   <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                     <div class="card-body">
-                      Als u contact met ons wilt opnemen, kunt u ons <b>bellen of mailen</b>. De contactgegevens per tutor vindt u hieronder.
+                      Als u contact met ons wilt opnemen, kunt u ons <b>bellen of mailen</b>. De contactgegevens zijn te vinden op de <b>"tutor" pagina</b>.
                     </div>
                   </div>
                 </div>
