@@ -9,7 +9,7 @@ export default class Frontpage extends Component {
   constructor() {
     super();
     this.state = {
-      style: "warning"
+      style: "bijles"
     }
   }
 
@@ -17,9 +17,9 @@ export default class Frontpage extends Component {
     const textStyleColor = this.state.style === "light" || this.state.style === "warning" ? "black " : "white "
     const textStyleColor2 = this.state.style === "light" || this.state.style === "warning" ? "dark " : "light "
     return(
-      <div>
+      <div id="#frontpage">
         <Header style={this.state.style}/>
-        <div className="container">
+        <div className="container frontpagecontainer">
           <div className="row">
             <div className="col-md-9">
               <div className="card">
@@ -32,7 +32,7 @@ export default class Frontpage extends Component {
               </div>
             </div>
             <div className="col-md-3 tarief-card">
-              <div className={"card text-center text-" + textStyleColor + "bg-" + this.state.style + " mb-3"} style={{maxWidth: 18 + 'rem'}}>
+              <div className={"card text-center text-" + textStyleColor + "bg-" + this.state.style + " mb-3"}>
                 <div className="card-header">Tarief</div>
                 <div className="card-body">
                   <h4 className="card-title">Wij werken voor:</h4>
