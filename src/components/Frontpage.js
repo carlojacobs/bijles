@@ -5,6 +5,8 @@
 import React, { Component } from 'react';
 import Header from './Header';
 
+import { Link } from 'react-router-dom';
+
 export default class Frontpage extends Component {
   constructor() {
     super();
@@ -27,7 +29,7 @@ export default class Frontpage extends Component {
                   <h1 className="card-title">Wie zijn wij?</h1>
                   <h5 className="card-subtitle mb-2 text-muted">Goede vraag!</h5>
                   <p className="card-text" style={{fontSize: 1.2+'rem'}}>Wij zijn een groep leerlingen die in de vierde klas VWO of hoger zitten op het Revius Lyceum in Doorn. Wij hebben veel ervaring met toetsen, huiswerk en andere schoolzaken. Graag helpen wij uw kind om zijn of haar cijfers te verbeteren.</p>
-                  <a className={"btn btn-lg btn-" + this.state.style} href="/tutoren">Oke! Wie kan ik inhuren?</a>
+                  <Link className={"btn btn-lg btn-" + this.state.style} to="/tutoren">Oke! Wie kan ik inhuren?</Link>
                 </div>
               </div>
             </div>
