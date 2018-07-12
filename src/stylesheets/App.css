@@ -3,11 +3,9 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
+
 :root {
-  --bijlesr: 33;
-  --bijlesg: 145;
-  --bijlesb: 251;
-  --bijleshoverfactor: 0.8;
+  --bijlescolor: #009FFD
 }
 
 html {
@@ -25,17 +23,15 @@ html {
 
 .btn-bijles {
   color: white;
-  background-color: rgb(var(--bijlesr), var(--bijlesg), var(--bijlesb));
+  background-color: var(--bijlescolor);
 }
 
 .btn-bijles:hover {
-  color: white;
-  /* background-color: rgb(var(--bijlesr), var(--bijlesg), var(--bijlesb), var(--bijleshoverfactor)); */
-  background-color: rgb(16.5, 72.5, 125.5);
+  color: grey;
 }
 
 .bg-bijles {
-  background-color: rgb(var(--bijlesr), var(--bijlesg), var(--bijlesb));
+  background-color: var(--bijlescolor);
 }
 
 #headerjumbo {
