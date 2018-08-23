@@ -12,10 +12,9 @@ export default class Tutors extends Component {
     this.state = {
       tutors: [
         {"name": "Carlo Jacobs", "klas": "4 vwo, IB", "email": "carlojacobs@reviaandoorn.nl", "description": "Wiskunde, Natuurkunde, Scheikunde, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"},
-        {"name": "Noortje Brunner", "klas": "4 vwo, IB", "email": "noortjebrunner@reviaandoorn.nl", "description": "Geschiedenis, Economie, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"},
-        {"name": "Noortje Brunner", "klas": "4 vwo, IB", "email": "noortjebrunner@reviaandoorn.nl", "description": "Geschiedenis, Economie, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"},
-        {"name": "Noortje Brunner", "klas": "4 vwo, IB", "email": "noortjebrunner@reviaandoorn.nl", "description": "Geschiedenis, Economie, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"},
-        {"name": "Noortje Brunner", "klas": "4 vwo, IB", "email": "noortjebrunner@reviaandoorn.nl", "description": "Geschiedenis, Economie, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"}
+        {"name": "Carlo Jacobs", "klas": "4 vwo, IB", "email": "carlojacobs@reviaandoorn.nl", "description": "Wiskunde, Natuurkunde, Scheikunde, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"},
+        {"name": "Carlo Jacobs", "klas": "4 vwo, IB", "email": "carlojacobs@reviaandoorn.nl", "description": "Wiskunde, Natuurkunde, Scheikunde, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"},
+        {"name": "Carlo Jacobs", "klas": "4 vwo, IB", "email": "carlojacobs@reviaandoorn.nl", "description": "Wiskunde, Natuurkunde, Scheikunde, Engels", "imageLink": dummyImage, "phone": "06 34 64 36 33"}
       ]
     }
     this.getTutorElements = this.getTutorElements.bind(this);
@@ -26,10 +25,10 @@ export default class Tutors extends Component {
     for (let i = 0; i < this.state.tutors.length; i++) {
       var tutor = this.state.tutors[i];
       var newElement = (
-        <div className="col-lg-4 col-md-6 col-sm-12">
-          <div className="card studentcard tutor-card" key={i}>
-            <img className="card-img-top" id="tutorimage" src={tutor["imageLink"]} alt="Tutor"/>
-            <div className="card-body tutor-card-body">
+        <div className="col-md-4">
+          <div className="card mb-4 shadow-sm">
+            <img className="card-img-top" src={tutor["imageLink"]} alt="Card image cap"/>
+            <div className="card-body">
               <h5 className="card-title">{tutor["name"]}, {tutor["klas"]}</h5>
               <p className="card-text">
                 <b>Vakken:</b> {tutor["description"]}
@@ -38,6 +37,15 @@ export default class Tutors extends Component {
                 <br/>
                 <b>Email:</b> {tutor["email"]}
               </p>
+              <div className="d-flex justify-content-between align-items-center">
+                {/*
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                */}
+                <small className="text-muted">{tutor["klas"]}</small>
+              </div>
             </div>
           </div>
         </div>
@@ -50,13 +58,18 @@ export default class Tutors extends Component {
   render() {
     var elements = this.getTutorElements();
     return(
-      <div className="container mt-5">
-        <h1 id="tutors">Tutoren</h1>
-        <p style={{fontSize: '1.3rem'}}>Als u een van ons wilt inhuren, of als u nog vragen heeft, neem dan gerust contact met ons op. Dit kan via email of telefoon. Verdere details zoals beschikbaarheid en betaling kunt u overleggen met de tutor.</p>
-        <br/>
-        <div className="container tutorcontainer">
-          <div className="row">
-            {elements}
+      <div>
+        <section class="jumbotron text-center tutor-jumbo">
+          <div class="container">
+            <h1 class="tutor-jumbo-heading">Tutoren</h1>
+            <p class="lead text-muted">Als u een van ons wilt inhuren, of als u nog vragen heeft, neem dan gerust contact met ons op. Dit kan via email of telefoon. Verdere details zoals beschikbaarheid en betaling kunt u overleggen met de tutor.</p>
+          </div>
+        </section>
+        <div className="album py-5 bg-light">
+          <div className="container">
+            <div className="row">
+              {elements}
+            </div>
           </div>
         </div>
       </div>
