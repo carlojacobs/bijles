@@ -103,7 +103,7 @@ export default class Frontpage extends Component {
                   </div>
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                     <div class="card-body">
-                      Uit ervaring weet ik dat een bijles effectief is als deze minimaal een <b>uur tot anderhalf uur</b> duurt.
+                      Een bijles is effectief als deze minimaal een <b>uur tot anderhalf uur</b> duurt.
                     </div>
                   </div>
                 </div>
