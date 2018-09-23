@@ -89,8 +89,6 @@ export default class Frontpage extends Component {
                         <li>Engels (ook op TTO niveau)</li>
                         <li>Natuurkunde / NASK</li>
                         <li>Scheikunde / NASK</li>
-                        <li>Economie</li>
-                        <li>Geschiedenis</li>
                       </ul>
                     </div>
                   </div>
