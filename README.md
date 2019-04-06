@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -2443,3 +2444,7 @@ In the future, we might start automatically compiling incompatible third-party m
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
 # bijles
+=======
+# Tutoring Website
+This is a website I made for my local tutoring business. It makes it easier for parents and students to get more information about me and to get in contact with me. I made it using my favourite Javascript IO library: [React](https://reactjs.org/).
+>>>>>>> 490d1c7f36e507fb766f8d69120628facc69d5d7
